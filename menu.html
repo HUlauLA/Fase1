@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Pokemon Bank Menu</title>
-        <!-- Acá mando a llamar a los archivos de estilo, el primero es de bootstrap y el segundo es el personalizado-->
-         <link rel="stylesheet" href="css/bootstrap.min.css" />
-         <link rel="stylesheet" href="css/styles.css" />
-    </head>
-    <body>
-        <!-- En este div coloco la cabecera de la pantalla, para que nos aparezca la imagen, en este caso pikachu-->
-        <div class="menu-container">
-            <div class="text-center d-flex justify-content-center align-items-center mb-4 flex-wrap gap-2">
-                <h4 id="saludo">Bienvenido a Pokémon Bank</h4>
-                <img src="images/pikachu.png" alt="PokéIcono" class="saludo-img">
-            </div>
-            <!-- acá ya empiezo a agregar los botones para cada operación-->
-            <div class="row">
-                <!-- Este div me agrupa los botones que aparecerán a la izquierda de la pantalla,
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Icono para la pestaña del navegador -->
+  <link rel="shortcut icon" href="images\iconTitleBall.ico" type="image/x-icon">
+  <title>Pokemon Bank Menu</title>
+  <!-- Acá mando a llamar a los archivos de estilo, el primero es de bootstrap y el segundo es el personalizado-->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- En este div coloco la cabecera de la pantalla, para que nos aparezca la imagen, en este caso pikachu-->
+  <div class="menu-container">
+    <div class="text-center d-flex justify-content-center align-items-center mb-4 flex-wrap gap-2">
+      <h4 id="saludo">Bienvenido a Pokémon Bank</h4>
+      <img src="images/pikachu.png" alt="PokéIcono" class="saludo-img">
+    </div>
+    <!-- acá ya empiezo a agregar los botones para cada operación-->
+    <div class="row">
+      <!-- Este div me agrupa los botones que aparecerán a la izquierda de la pantalla,
                 también se le agrega una imagen diferente a cada botón, en este caso cada botón es una pokeball-->
-                <div class="col-md-6">
-                    <button class="btn btn-primary btn-block mb-2" onclick="deposito()">
-                        <img src="images/pokeball.png" alt="icono" style="width: 30px; margin-right: 8px">
-                        Depositar Dinero
-                    </button>
-                    <button class="btn btn-info btn-block mb-2" onclick="consulta()">
-                        <img src="images/superball.png" alt="icono" style="width: 22px; margin-right: 8px">
-                        Consultar Saldo
-                    </button>
-                    <button class="btn btn-secondary btn-block mb-2" onclick="historial()">
-                        <img src="images/ultraball.png" alt="icono" style="width: 22px; margin-right: 8px">
-                        Historial de transacciones
-                    </button>
-                </div>
-                <!-- Este div es para agrupar los botones a la derecha, igualmente cada uno tiene una imagen diferente-->
-                <div class="col-md-6">
-                    <button class="btn btn-danger btn-block mb-2" onclick="retiro()">
-                        <img src="images/masterball.png" alt="icono" style="width: 22px; margin-right: 8px">
-                        Retirar Dinero
-                    </button>
-                    <button class="btn btn-warning btn-block mb-2" onclick="servicio()">
-                        <img src="images/acopioball.png" alt="icono" style="width: 25px; margin-right: 8px">
-                        Pagar Servicio
-                    </button>
-                    <button class="btn btn-success btn-block mb-2" onclick="grafico()">
-                        <img src="images/extranaball.png" alt="icono" style="width: 30px; margin-right: 8px">
-                        Mostrar Gráfico
-                    </button>
-                </div>
-            </div>
-            <!--  Este es el botón para regresar a la pantalla de login-, el onclick manda a llamar a la función-->
-            <div class="text-center mt-4">
-                <button class="btn btn-dark px-5" onclick="salir()">Salir</button>
-            </div>
-        </div>
-         <!-- El bootstrap y el script -->
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+      <div class="col-md-6">
+        <button class="btn btn-primary btn-block mb-2" onclick="deposito()">
+          <img src="images/pokeball.png" alt="icono" style="width: 30px; margin-right: 8px">
+          Depositar Dinero
+        </button>
+        <button class="btn btn-info btn-block mb-2" onclick="consulta()">
+          <img src="images/superball.png" alt="icono" style="width: 22px; margin-right: 8px">
+          Consultar Saldo
+        </button>
+        <button class="btn btn-secondary btn-block mb-2" onclick="historial()">
+          <img src="images/ultraball.png" alt="icono" style="width: 22px; margin-right: 8px">
+          Historial de transacciones
+        </button>
+      </div>
+      <!-- Este div es para agrupar los botones a la derecha, igualmente cada uno tiene una imagen diferente-->
+      <div class="col-md-6">
+        <button class="btn btn-danger btn-block mb-2" onclick="retiro()">
+          <img src="images/masterball.png" alt="icono" style="width: 22px; margin-right: 8px">
+          Retirar Dinero
+        </button>
+        <button class="btn btn-warning btn-block mb-2" onclick="servicio()">
+          <img src="images/acopioball.png" alt="icono" style="width: 25px; margin-right: 8px">
+          Pagar Servicio
+        </button>
+        <button class="btn btn-success btn-block mb-2" onclick="grafico()">
+          <img src="images/extranaball.png" alt="icono" style="width: 30px; margin-right: 8px">
+          Mostrar Gráfico
+        </button>
+      </div>
+    </div>
+    <!--  Este es el botón para regresar a la pantalla de login-, el onclick manda a llamar a la función-->
+    <div class="text-center mt-4">
+      <button class="btn btn-dark px-5" onclick="salir()">Salir</button>
+    </div>
+  </div>
+  <!-- El bootstrap y el script -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
