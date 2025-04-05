@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\js\\bootstrap.bundle.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\bootstrap.bundle.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\images\\acopioball.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:images\\acopioball.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\Consultar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Consultar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\Login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\Grafico.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Grafico.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\Historial.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Historial.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +58,116 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "acopioball.png -  [Espa\u00F1ol (M\u00E9xico)] - PNG [234x234, 32 bits, PNG]",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\images\\acopioball.png",
+              "RelativeDocumentMoniker": "images\\acopioball.png",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\images\\acopioball.png -  [Espa\u00F1ol (M\u00E9xico)] - PNG [234x234, 32 bits, PNG]",
+              "RelativeToolTip": "images\\acopioball.png -  [Espa\u00F1ol (M\u00E9xico)] - PNG [234x234, 32 bits, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-04-05T03:31:22.333Z",
+              "EditorCaption": " -  [Espa\u00F1ol (M\u00E9xico)] - PNG [234x234, 32 bits, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\css\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "css\\bootstrap.min.css",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\css\\bootstrap.min.css",
+              "RelativeToolTip": "css\\bootstrap.min.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-05T03:30:18.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "bootstrap.bundle.min.js",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\js\\bootstrap.bundle.min.js",
+              "RelativeDocumentMoniker": "js\\bootstrap.bundle.min.js",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\js\\bootstrap.bundle.min.js",
+              "RelativeToolTip": "js\\bootstrap.bundle.min.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-05T03:29:54.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\css\\styles.css",
+              "RelativeDocumentMoniker": "css\\styles.css",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\css\\styles.css",
+              "RelativeToolTip": "css\\styles.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-05T03:29:52.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\js\\script.js",
+              "RelativeDocumentMoniker": "js\\script.js",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\js\\script.js",
+              "RelativeToolTip": "js\\script.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-05T03:29:31.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.html",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\Login.html",
+              "RelativeDocumentMoniker": "Login.html",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\Login.html",
+              "RelativeToolTip": "Login.html",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-05T03:26:18.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Historial.html",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\Historial.html",
+              "RelativeDocumentMoniker": "Historial.html",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\Historial.html",
+              "RelativeToolTip": "Historial.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-05T03:25:15.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Consultar.html",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\Consultar.html",
+              "RelativeDocumentMoniker": "Consultar.html",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\Consultar.html",
+              "RelativeToolTip": "Consultar.html",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-05T03:24:58.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Grafico.html",
               "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\Grafico.html",
               "RelativeDocumentMoniker": "Grafico.html",
               "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Fase1\\Grafico.html",
               "RelativeToolTip": "Grafico.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-05T01:39:46.03Z",
               "EditorCaption": ""
