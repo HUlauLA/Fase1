@@ -37,4 +37,8 @@ body{
   font-weight: bold;
 }
 
+.table-container {
+    overflow-x: auto;
+}
+
 
