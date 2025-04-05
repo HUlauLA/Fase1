@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráfico de Pastel</title>
+  <!-- Incluir Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <h2>Gráfico de Pastel de Entrada y Salida</h2>
+
+
+  <canvas id="myPieChart" width="400" height="400"></canvas>
+
+  <script>
+
+    const datosEntrada = 30;  
+    const datosSalida = 70;   
+
+
+    const ctx = document.getElementById('myPieChart').getContext('2d');
+    const myPieChart = new Chart(ctx, {
+      type: 'pie',  // Tipo de gráfico: pastel
+      data: {
+        labels: ['Entrada', 'Salida'], 
+        datasets: [{
+          label: 'Datos',
+          data: [datosEntrada, datosSalida], 
+          backgroundColor: ['#FF6384', '#36A2EB'],
+          hoverBackgroundColor: ['#FF4C6A', '#4A90E2'] 
+        }]
+      },
+      options: {
+        responsive: false,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          tooltip: {
+            callbacks: {
+              label: function(tooltipItem) {
+                return tooltipItem.label + ': ' + tooltipItem.raw + '%';  
+              }
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
