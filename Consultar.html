@@ -2,35 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Pokémon Bank</title>
+  <link rel="shortcut icon" href="images\iconTitleBall.ico" type="image/x-icon">
+  <title>Consultar</title>
     <!-- Acá mando a llamar a los archivos de estilo, el primero es de bootstrap y el segundo es el personalizado-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
     <body>
 
         <!-- kevin trabajará aqui-->
         <!-- este div contiene la cabecera de la pantalla, en donde nos muestra el logo y el saludo-->
-        <div class="login-container">
-            <img src="images/pokemon-bank.jpg" alt="PokeBank Logo" class="logo">
-            <h3>¡Bienvenid@ al Pokémon Bank!</h3>
+       <div class="container mt-5">
+    <div class="card mx-auto p-4 shadow text-center" style="max-width: 500px;">
+      <img src="images/pokemon-bank.jpg" alt="logo" style="width: 100px;">
+      <h4 class="mt-3">¡Bienvenid@ al Pokémon Bank!</h4>
+      <p class="mt-2">¿Qué desea consultar ahora?</p>
 
-            <h6> ¿Qué desea consultar ahora? </h6>
+       <!-- Tabs -->
+      <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-saldo-tab" onclick="mostrarConsulta('saldo')">Saldo</button>
+        <button class="nav-link" id="nav-ingresos-tab" onclick="mostrarConsulta('ingresos')">Ingresos</button>
+        <button class="nav-link" id="nav-egresos-tab" onclick="mostrarConsulta('egresos')">Egresos</button>
+      </div>
 
-            <input list="consultar" name="consulta">
-            <datalist id="consultar">
-                <option value="Saldo">
-                <option value="Egresos">
+      <!-- Resultado -->
+      <div class="mt-4" id="resultadoConsulta"></div>
 
-            </datalist>
-
-            <button type="button">Buscar</button>
-
+      <!-- Botón para imprimir -->
+      <div class="mt-3" id="btnImprimir" style="display:none;">
+        <button class="btn btn-dark" onclick="imprimirComprobante()">Imprimir Comprobante</button>
+        <div class="mt-3">
+            <button class="btn btn-secondary" onclick="confirmarRegresoConsulta()">Volver al menú</button>
         </div>
+      </div>
+    </div>
+  </div>
+
 
 
         <!-- El bootstrap y el script -->
         <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/consultar.js"></script>
     </body>
 </html>
