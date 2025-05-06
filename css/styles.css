@@ -1,15 +1,16 @@
-body{
-    background-color: #f8f9fa;
+body {
+  background-color: #53c684; /* Color de fondo general (puedes cambiarlo) */
 }
 
 .login-container{
-    max-width: 400px;
-    margin: 80px auto;
-    padding: 30px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 50px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .logo {
@@ -18,13 +19,63 @@ body{
   margin: 20px auto;
 }
 
+#displayPin {
+  font-size: 28px;
+  letter-spacing: 10px;
+  margin: 10px 0 20px 0;
+  border: none;
+  background: #f0f0f0;
+  padding: 15px;
+  width: 80%;
+  text-align: center;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-items: center;
+}
+
+.keypad button {
+  width: 120px;   /* más ancho: rectangular */
+  height: 60px;   /* menos alto */
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+  border: 1px solid #ccc;
+  transition: background-color 0.2s;
+}
+
+/* Botones numéricos */
+.keypad button:not(.btn-cancel):not(.btn-submit) {
+  background-color: #e6e6e6;
+}
+
+/*Esto es para oscurecer el botón cuando el mouse se posicione sobre ellos*/
+.keypad button:not(.btn-cancel):not(.btn-submit):hover {
+  background-color: #9a9292;
+}
+
+.btn-cancel {
+  background-color: #f43a27 !important;;
+  color: white !important;;
+}
+
+.btn-submit {
+  background-color: #2eda3c !important;;
+  color: white !important;;
+}
+
 .menu-container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 30px;
-  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  background: white;
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .saludo-img {
@@ -37,4 +88,63 @@ body{
   font-weight: bold;
 }
 
+/* Aumentar tamaño de los botones del menú */
+.menu-container .btn {
+  padding: 20px 24px;
+  font-size: 18px;
+  line-height: 1.2;
+  height: 100px; /* aumenta la altura total */
+  white-space: normal; /* permite el salto de línea */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*flex-direction: column;*/
+}
 
+/* Estilo para el número de cuenta */
+#cuenta {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin-top: -10px;
+}
+.depositar-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.depositar-keypad button {
+  width: 90px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: #f8f9fa; /* color claro visible */
+  border: 2px solid #ccc;    /* borde más notorio */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* leve sombra */
+  transition: all 0.2s ease;
+}
+
+.depositar-keypad button:hover {
+  background-color: #e2e6ea;
+  border-color: #999;
+}
+
+.btn-limpiar {
+  width: 90px;
+  height: 60px;
+  font-size: 18px;
+  background-color: #f43a27 !important;;
+  color: white !important;;
+  border: 2px solid #c0392b;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.btn-limpiar:hover {
+  background-color: #c0392b;
+}

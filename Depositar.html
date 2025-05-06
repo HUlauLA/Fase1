@@ -10,10 +10,14 @@
   <!-- Laura trabaja aquí -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ librerías ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- SweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 
 <body>
-  <!-- Este apartado es el encabezado de la pantalla-->
   <div class="container mt-5">
     <div class="card mx-auto p-4 shadow" style="max-width: 500px">
       <div class="text-center">
@@ -21,22 +25,36 @@
         <h4 class="mt-3">Depositar dinero</h4>
       </div>
 
-      <!-- Este ya es el "Text Box" para ingresar el monto a depositar-->
-      <form>
-        <div class="form-group mt-4">
-          <label for="monto">Ingrese el monto a depositar</label>
-          <input type="number" id="monto" class="form-control" placeholder="Ej. 50.00" min="1" required>
-        </div>
+      <div class="form-group mt-4">
+        <label for="monto">Ingrese el monto a depositar</label>
+        <input type="text" id="monto" class="form-control text-center" placeholder="Ej. 50.00">
+      </div>
 
-        <div class="text-center">
-          <button type="submit" class="btn btn-success mt-3" onclick="irAlMenu()">Confirmar</button>
-        </div>
-      </form>
+      <!-- Keypad -->
+      <div class="depositar-keypad mx-auto">
+        <button onclick="agregarDigito('1')">1</button>
+        <button onclick="agregarDigito('2')">2</button>
+        <button onclick="agregarDigito('3')">3</button>
+        <button onclick="agregarDigito('4')">4</button>
+        <button onclick="agregarDigito('5')">5</button>
+        <button onclick="agregarDigito('6')">6</button>
+        <button onclick="agregarDigito('7')">7</button>
+        <button onclick="agregarDigito('8')">8</button>
+        <button onclick="agregarDigito('9')">9</button>
+        <button onclick="limpiarMonto()" class="btn-limpiar">Limpiar</button>
+        <button onclick="agregarDigito('0')">0</button>
+        <button onclick="agregarDecimal()">.</button>
+      </div>
+
+      <div class="text-center mt-3">
+        <button class="btn btn-success" onclick="confirmarDeposito()">Confirmar</button>
+        <button class="btn btn-secondary" onclick="confirmarRegreso()">Volver al menú</button>
+      </div>
     </div>
   </div>
   <!-- El bootstrap y el script -->
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/depositar.js"></script>
 </body>
 
 </html>
