@@ -7,7 +7,10 @@
     <!-- Acá mando a llamar a los archivos de estilo, el primero es de bootstrap y el segundo es el personalizado-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ librerías ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- jsPDF -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
     <body>
@@ -30,7 +33,7 @@
       <!-- Resultado -->
       <div class="mt-4" id="resultadoConsulta"></div>
 
-      <!-- Botón para imprimir -->
+      <!-- Botón para imprimir y volver al menú -->
       <div class="mt-3" id="btnImprimir" style="display:none;">
         <button class="btn btn-dark" onclick="imprimirComprobante()">Imprimir Comprobante</button>
         <div class="mt-3">
@@ -39,8 +42,6 @@
       </div>
     </div>
   </div>
-
-
 
         <!-- El bootstrap y el script -->
         <script src="js/bootstrap.bundle.min.js"></script>

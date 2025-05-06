@@ -1,4 +1,4 @@
-// Mostrar saludo con datos del usuario
+// acá se buscan y se leen los datos almacenados localmente con las variables "nombre" y "cuenta"
 document.addEventListener("DOMContentLoaded", () => {
   const nombre = localStorage.getItem("nombre") || "Usuario";
   const cuenta = localStorage.getItem("cuenta") || "0000000000";
@@ -22,7 +22,7 @@ function salir() {
     cancelButtonColor: '#3085d6'
   }).then((result) => {
     if (result.isConfirmed) {
-      localStorage.removeItem("nombre");
+      localStorage.removeItem("nombre");//aquí si cerramos sesión se limpian los datos del localStorage y nos redirige a la pantalla Login
       localStorage.removeItem("cuenta");
       window.location.href = "Login.html";
     }

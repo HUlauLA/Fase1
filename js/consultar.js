@@ -1,24 +1,25 @@
 function mostrarConsulta(tipo) {
+  //declaración de variables/constantes
   const resultadoDiv = document.getElementById("resultadoConsulta");
   const btnImprimir = document.getElementById("btnImprimir");
   let contenido = "";
   let data = [];
 
-  if (tipo === "saldo") {
+  if (tipo === "saldo") {//para berificar el saldo actual
     const saldo = parseFloat(localStorage.getItem("saldo")) || 500;
     contenido = `<h5>Tu saldo actual es:</h5><h3 class="text-success">$${saldo.toFixed(2)}</h3>`;
     btnImprimir.style.display = "block";
     btnImprimir.dataset.tipo = "saldo";
   }
 
-  if (tipo === "ingresos") {
+  if (tipo === "ingresos") {//verificar solamente ingresos
     const historial = JSON.parse(localStorage.getItem("historial")) || [];
     data = historial.filter(tx => tx.tipo === "Depósito");
 
     if (data.length === 0) {
-      contenido = `<p>No hay ingresos registrados.</p>`;
+      contenido = `<p>No hay ingresos registrados.</p>`;//si no hay ingresos registrados no muestra nada
       btnImprimir.style.display = "none";
-    } else {
+    } else {//muestra todos los ingresos que se han hecho con sus respetivas fechas y montos
       contenido = data.map(tx => `
         <div class="border rounded p-2 d-flex justify-content-between">
           <strong>${tx.fecha}</strong>
@@ -30,14 +31,14 @@ function mostrarConsulta(tipo) {
     }
   }
 
-  if (tipo === "egresos") {
+  if (tipo === "egresos") { //verificar solamente egresos
     const historial = JSON.parse(localStorage.getItem("historial")) || [];
     data = historial.filter(tx => tx.tipo === "Retiro");
 
-    if (data.length === 0) {
+    if (data.length === 0) {//si no hay egresos registrados no muestra nada
       contenido = `<p>No hay egresos registrados.</p>`;
       btnImprimir.style.display = "none";
-    } else {
+    } else {//muestra todos los egresos que se han hecho con sus respetivas fechas y montos
       contenido = data.map(tx => `
         <div class="border rounded p-2 d-flex justify-content-between">
           <strong>${tx.fecha}</strong>
@@ -77,6 +78,7 @@ function imprimirComprobante() {
   doc.save(`consulta_${tipo}.pdf`);
 }
 
+//botón regresar al menú
 function confirmarRegresoConsulta() {
   Swal.fire({
     title: '¿Deseas regresar al menú?',

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const historial = JSON.parse(localStorage.getItem("historial")) || [];
   const historialDiv = document.getElementById("historialListado");
 
-  if (historial.length === 0) {
+  if (historial.length === 0) {//si no hay transacciones muestra este mensaje
     historialDiv.innerHTML = "<p class='text-center'>No hay transacciones registradas.</p>";
     return;
   }
@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   historialDiv.innerHTML = contenido;
 });
 
+//botón para regresar al menú
 function volverAlMenuDesdeHistorial() {
   Swal.fire({
     title: '¿Deseas regresar al menú?',
@@ -42,12 +43,12 @@ function volverAlMenuDesdeHistorial() {
     }
   });
 }
-
+//impresión del comprobante
 function imprimirHistorial() {
   const historial = JSON.parse(localStorage.getItem("historial")) || [];
 
   if (historial.length === 0) {
-    Swal.fire("Nada para imprimir", "No hay transacciones registradas", "info");
+    Swal.fire("Nada para imprimir", "No hay transacciones registradas", "info"); //si el historial no tiene ningun movimiento sale este mensaje
     return;
   }
 
@@ -55,11 +56,11 @@ function imprimirHistorial() {
   const doc = new jsPDF();
   let y = 20;
 
-  doc.text("Pokémon Bank - Historial de Transacciones", 20, y);
+  doc.text("Pokémon Bank - Historial de Transacciones", 20, y); //cabecera del documento
   y += 10;
 
   historial.forEach(tx => {
-    const linea = `${tx.fecha} - ${tx.tipo} - $${tx.monto}`;
+    const linea = `${tx.fecha} - ${tx.tipo} - $${tx.monto}`; //se muestra la fecha, tipo de movimiento - monto del movimiento
     doc.text(linea, 20, y);
     y += 10;
 
@@ -69,5 +70,5 @@ function imprimirHistorial() {
     }
   });
 
-  doc.save("historial_pokemon_bank.pdf");
+  doc.save("historial_pokemon_bank.pdf");//nombre del documento
 }
