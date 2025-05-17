@@ -1,8 +1,8 @@
 body {
-  background-color: #53c684; /* Color de fondo general (puedes cambiarlo) */
+  background-color: #87ceeb; /* Color de fondo general (puedes cambiarlo) */
 }
 
-.login-container{
+.login-container {
   max-width: 600px;
   margin: auto;
   margin-top: 50px;
@@ -38,8 +38,8 @@ body {
 }
 
 .keypad button {
-  width: 120px;   /* más ancho: rectangular */
-  height: 60px;   /* menos alto */
+  width: 120px; /* más ancho: rectangular */
+  height: 60px; /* menos alto */
   font-size: 20px;
   border-radius: 8px;
   background-color: #e6e6e6;
@@ -58,13 +58,13 @@ body {
 }
 
 .btn-cancel {
-  background-color: #f43a27 !important;;
-  color: white !important;;
+  background-color: #f43a27 !important;
+  color: white !important;
 }
 
 .btn-submit {
-  background-color: #2eda3c !important;;
-  color: white !important;;
+  background-color: #2eda3c !important;
+  color: white !important;
 }
 
 .menu-container {
@@ -123,7 +123,7 @@ body {
   font-size: 18px;
   border-radius: 8px;
   background-color: #f8f9fa; /* color claro visible */
-  border: 2px solid #ccc;    /* borde más notorio */
+  border: 2px solid #ccc; /* borde más notorio */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* leve sombra */
   transition: all 0.2s ease;
 }
@@ -137,8 +137,8 @@ body {
   width: 90px;
   height: 60px;
   font-size: 18px;
-  background-color: #f43a27 !important;;
-  color: white !important;;
+  background-color: #f43a27 !important;
+  color: white !important;
   border: 2px solid #c0392b;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
